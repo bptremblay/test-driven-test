@@ -13,7 +13,7 @@ define(function() {
 	 */
 	var delay = function (milliseconds, scope, methodName, args) {
 		var thePromise = new Promise(function(resolve, reject) {
-			window.setTimeout(function(){
+			setTimeout(function(){
 				try{
 					var method = scope[methodName];
 					var result = method.apply(scope, args);
