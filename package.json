@@ -6,7 +6,10 @@
   "dependencies": {
     "gulp-jasmine": "^1.0.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gulp": "^3.8.10",
+    "gulp-jasmine-phantom": "^1.0.16"
+  },
   "scripts": {
     "test": "test"
   },

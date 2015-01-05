@@ -1,4 +1,4 @@
-define([ 'calculator' ], function(Calculator) {
+define([ 'Calculator' ], function(Calculator) {
 	// alternately use var Calculator = require('calculator');
 	ScientificCalculator.prototype = new Calculator();
 
