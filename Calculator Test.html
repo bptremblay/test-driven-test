@@ -1,0 +1,378 @@
+<html>
+
+<head>
+<meta name=Title content="">
+<meta name=Keywords content="">
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=Generator content="Microsoft Word 14 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:"ＭＳ 明朝";}
+@font-face
+	{font-family:"ＭＳ 明朝";}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:Cambria;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:Cambria;}
+.MsoChpDefault
+	{font-family:Cambria;}
+ /* Page Definitions */
+@page WordSection1
+	{size:11.0in 8.5in;
+	margin:1.25in 1.0in 1.25in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US>
+
+<div class=WordSection1>
+
+<p class=MsoNormal style='margin-bottom:16.05pt;text-autospace:none'><b><span
+style='font-size:20.0pt;font-family:Helvetica'>Write a&nbsp;</span></b><b><span
+style='font-size:20.0pt;font-family:Courier'>Calculator</span></b><b><span
+style='font-size:20.0pt;font-family:Helvetica'>&nbsp;class that matches this
+specification</span></b></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr>
+  <td width=440 style='width:440.0pt;border:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>describe(&nbsp;&quot;Calculator&quot;,&nbsp;function(){</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>&nbsp;&nbsp;&nbsp;&nbsp;var</span><span
+  style='font-size:10.0pt;font-family:Helvetica'>&nbsp;</span><span
+  style='font-size:10.0pt;font-family:Courier'>calculator;</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>&nbsp;</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>&nbsp;&nbsp;&nbsp;&nbsp;beforeEach(&nbsp;function(){</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;calculator
+  =&nbsp;new</span><span style='font-size:10.0pt;font-family:Helvetica'>&nbsp;</span><span
+  style='font-size:10.0pt;font-family:Courier'>Calculator();</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>&nbsp;&nbsp;&nbsp;&nbsp;} );</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Helvetica'>&nbsp;</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>&nbsp;&nbsp;&nbsp;&nbsp;it(&nbsp;&quot;adds 1 and
+  2&quot;,&nbsp;function(){</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expect(
+  calculator.add( 1, 2 ) ).to.equal( 3 );</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>&nbsp;&nbsp;&nbsp;&nbsp;} );</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Helvetica'>&nbsp;</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>&nbsp;&nbsp;&nbsp;&nbsp;it(&nbsp;&quot;subtracts 2 from
+  9&quot;,&nbsp;function(){</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expect(
+  calculator.subtract( 9, 2 ) ).to.equal( 7 );</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>&nbsp;&nbsp;&nbsp;&nbsp;} );</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Helvetica'>&nbsp;</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>&nbsp;&nbsp;&nbsp;&nbsp;it(&nbsp;&quot;multiplies 4 and
+  3&quot;,&nbsp;function(){</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expect(
+  calculator.multiply( 4, 3 ) ).to.equal( 12 );</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>&nbsp;&nbsp;&nbsp;&nbsp;} );</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Helvetica'>&nbsp;</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>&nbsp;&nbsp;&nbsp;&nbsp;it(&nbsp;&quot;divides 10 by
+  2&quot;,&nbsp;function(){</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expect(
+  calculator.divide( 10, 2 ) ).to.equal( 5 );</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>&nbsp;&nbsp;&nbsp;&nbsp;} );</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style='font-size:
+  10.0pt;font-family:Helvetica'>&nbsp;</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>&nbsp;&nbsp;&nbsp;&nbsp;it(&nbsp;&quot;does not divide
+  by 0&quot;,&nbsp;function(){</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expect(
+  calculator.divide( 5, 0 ) ).to.equal( NaN );</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>&nbsp;&nbsp;&nbsp;&nbsp;} );</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>} );</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:16.05pt;text-autospace:none'><b><span
+style='font-size:20.0pt;font-family:Helvetica'>&nbsp;</span></b></p>
+
+<b><span style='font-size:20.0pt;font-family:Helvetica'><br clear=all
+style='page-break-before:always'>
+</span></b>
+
+<p class=MsoNormal><b><span style='font-size:20.0pt;font-family:Helvetica'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:16.05pt;text-autospace:none'><b><span
+style='font-size:20.0pt;font-family:Helvetica'>Write a&nbsp;</span></b><b><span
+style='font-size:20.0pt;font-family:Courier'>ScientificCalculator</span></b><b><span
+style='font-size:20.0pt;font-family:Helvetica'>&nbsp;class that matches this
+specification</span></b></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr>
+  <td width=505 style='width:505.0pt;border:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>describe(&nbsp;&quot;ScientificCalculator&quot;,&nbsp;function(){</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>&nbsp;&nbsp;&nbsp;&nbsp;var</span><span
+  style='font-size:10.0pt;font-family:Helvetica'>&nbsp;</span><span
+  style='font-size:10.0pt;font-family:Courier'>calculator;</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>&nbsp;</span><span style='font-size:10.0pt;font-family:
+  Helvetica'>&nbsp;</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>&nbsp;&nbsp;&nbsp;&nbsp;beforeEach(&nbsp;function(){</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;calculator
+  =&nbsp;new</span><span style='font-size:10.0pt;font-family:Helvetica'>&nbsp;</span><span
+  style='font-size:10.0pt;font-family:Courier'>ScientificCalculator();</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>&nbsp;&nbsp;&nbsp;&nbsp;} );</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style='font-size:
+  10.0pt;font-family:Helvetica'>&nbsp;</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>&nbsp;&nbsp;&nbsp;&nbsp;it(&nbsp;&quot;extends
+  Calculator&quot;,&nbsp;function(){</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expect(
+  calculator ).to.be.instanceOf( Calculator );</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expect(
+  calculator ).to.be.instanceOf( ScientificCalculator );</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>&nbsp;&nbsp;&nbsp;&nbsp;} );</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Helvetica'>&nbsp;</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>&nbsp;&nbsp;&nbsp;&nbsp;it(&nbsp;&quot;returns the sine
+  of PI / 2&quot;,&nbsp;function(){</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expect(
+  calculator.sin( Math.PI / 2 ) ).to.equal( 1 );</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>&nbsp;&nbsp;&nbsp;&nbsp;} );</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Helvetica'>&nbsp;</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>&nbsp;&nbsp;&nbsp;&nbsp;it(&nbsp;&quot;returns the
+  cosine of PI&quot;,&nbsp;function(){</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expect(
+  calculator.cos( Math.PI ) ).to.equal( -1 );</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>&nbsp;&nbsp;&nbsp;&nbsp;} );</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Helvetica'>&nbsp;</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>&nbsp;&nbsp;&nbsp;&nbsp;it(&nbsp;&quot;returns the
+  tangent of 0&quot;,&nbsp;function(){</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expect(
+  calculator.tan( 0 ) ).to.equal( 0 );</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>&nbsp;&nbsp;&nbsp;&nbsp;} );</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Helvetica'>&nbsp;</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>&nbsp;&nbsp;&nbsp;&nbsp;it(&nbsp;&quot;returns the
+  logarithm of 1&quot;,&nbsp;function(){</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expect(
+  calculator.log( 1 ) ).to.equal( 0 );</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>&nbsp;&nbsp;&nbsp;&nbsp;} );</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>} );</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:16.05pt;text-autospace:none'><b><span
+style='font-size:20.0pt;font-family:Helvetica'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:16.05pt;text-autospace:none'><b><span
+style='font-size:20.0pt;font-family:Helvetica'>Write a&nbsp;</span></b><b><span
+style='font-size:20.0pt;font-family:Courier'>withExponents</span></b><b><span
+style='font-size:20.0pt;font-family:Helvetica'>&nbsp;functional mixin that
+matches this specification</span></b></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr>
+  <td width=569 style='width:569.0pt;border:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>describe(&nbsp;&quot;withExponents&quot;,&nbsp;function(){</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>&nbsp;&nbsp;&nbsp;&nbsp;var</span><span
+  style='font-size:10.0pt;font-family:Helvetica'>&nbsp;</span><span
+  style='font-size:10.0pt;font-family:Courier'>calculator;</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>&nbsp;</span><span style='font-size:10.0pt;font-family:
+  Helvetica'>&nbsp;</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>&nbsp;&nbsp;&nbsp;&nbsp;beforeEach(&nbsp;function(){</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;calculator
+  =&nbsp;new</span><span style='font-size:10.0pt;font-family:Helvetica'>&nbsp;</span><span
+  style='font-size:10.0pt;font-family:Courier'>Calculator();</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;withExponents.call(
+  calculator );</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>&nbsp;&nbsp;&nbsp;&nbsp;} );</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Helvetica'>&nbsp;</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>&nbsp;&nbsp;&nbsp;&nbsp;it(&nbsp;&quot;returns
+  2^3&quot;,&nbsp;function(){</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expect(
+  calculator.pow( 2, 3 ) ).to.equal( 8 );</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>&nbsp;&nbsp;&nbsp;&nbsp;} );</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Helvetica'>&nbsp;</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>&nbsp;&nbsp;&nbsp;&nbsp;it(&nbsp;&quot;multiplies 2^3
+  and 2^4&quot;,&nbsp;function(){</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expect(
+  calculator.multiplyExp( [ 2, 3 ], [ 2, 4 ] ) ).to.equal( 128 );</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>&nbsp;&nbsp;&nbsp;&nbsp;} );</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Helvetica'>&nbsp;</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>&nbsp;&nbsp;&nbsp;&nbsp;it(&nbsp;&quot;divides 2^3 by
+  2^5&quot;,&nbsp;function(){</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expect(
+  calculator.divideExp( [ 2, 3 ], [ 2, 5 ] ) ).to.equal( 0.25 );</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>&nbsp;&nbsp;&nbsp;&nbsp;} );</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>} );</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:16.05pt;text-autospace:none'><b><span
+style='font-size:20.0pt;font-family:Helvetica'>&nbsp;</span></b></p>
+
+<b><span style='font-size:20.0pt;font-family:Helvetica'><br clear=all
+style='page-break-before:always'>
+</span></b>
+
+<p class=MsoNormal><b><span style='font-size:20.0pt;font-family:Helvetica'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:16.05pt;text-autospace:none'><b><span
+style='font-size:20.0pt;font-family:Helvetica'>Write a&nbsp;</span></b><b><span
+style='font-size:20.0pt;font-family:Courier'>delay</span></b><b><span
+style='font-size:20.0pt;font-family:Helvetica'>&nbsp;function that matches this
+specification</span></b></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr>
+  <td width=649 style='width:649.0pt;border:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>describe(&nbsp;&quot;delay&quot;,&nbsp;function(){</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>&nbsp;&nbsp;&nbsp;&nbsp;var</span><span
+  style='font-size:10.0pt;font-family:Helvetica'>&nbsp;</span><span
+  style='font-size:10.0pt;font-family:Courier'>calculator =&nbsp;new</span><span
+  style='font-size:10.0pt;font-family:Helvetica'>&nbsp;</span><span
+  style='font-size:10.0pt;font-family:Courier'>Calculator();</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style='font-size:
+  10.0pt;font-family:Helvetica'>&nbsp;</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>&nbsp;&nbsp;&nbsp;&nbsp;it(&nbsp;&quot;returns a
+  promise&quot;,&nbsp;function(){</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var</span><span
+  style='font-size:10.0pt;font-family:Helvetica'>&nbsp;</span><span
+  style='font-size:10.0pt;font-family:Courier'>willAdd = delay( 100,
+  calculator,&nbsp;'add', [ 1, 1 ] );</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Helvetica'>&nbsp;</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expect(
+  willAdd ).to.be.instanceOf( Promise );</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expect(
+  willAdd ).to.be.fulfilled;</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>&nbsp;&nbsp;&nbsp;&nbsp;} );</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Helvetica'>&nbsp;</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>&nbsp;&nbsp;&nbsp;&nbsp;it(&nbsp;&quot;delays
+  execution&quot;,&nbsp;function(){</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expect(
+  delay( 1000, calculator,&nbsp;'add', [ 10, 5 ] ) ).to.eventually.equal( 15 );</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expect(
+  delay( 500, calculator,&nbsp;'subtract', [ 9, 5 ] ) ).to.eventually.equal( 4
+  );</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>&nbsp;&nbsp;&nbsp;&nbsp;} );</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Helvetica'>&nbsp;</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>&nbsp;&nbsp;&nbsp;&nbsp;it(&nbsp;&quot;cannot execute
+  functions that do not exist&quot;,&nbsp;function(){</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expect(
+  delay( 1000, calculator,&nbsp;'sqrt', [ 2, 2 ] ) ).to.be.rejected;</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>&nbsp;&nbsp;&nbsp;&nbsp;} );</span></p>
+  <p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt;
+  font-family:Courier'>} );</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+</div>
+
+</body>
+
+</html>
