@@ -1,23 +1,27 @@
 define([], function() {
-	function Calculator() {
+    function Calculator() {
 
+    }
+
+    Calculator.prototype.add = function(a, b) {
+	return (a + b);
+    };
+
+    Calculator.prototype.subtract = function(a, b) {
+	return (a - b);
+    };
+
+    Calculator.prototype.multiply = function(a, b) {
+	return (a * b);
+    };
+
+    Calculator.prototype.divide = function(a, b) {
+	var result = (a / b);
+	if (result === Infinity) {
+	    result = NaN;
 	}
+	return result;
+    };
 
-	Calculator.prototype.add = function(a, b) {
-		return (a+b);
-	};
-
-	Calculator.prototype.subtract = function(a, b) {
-		return (a-b);
-	};
-
-	Calculator.prototype.multiply = function(a, b) {
-		return (a*b);
-	};
-
-	Calculator.prototype.divide = function(a, b) {
-		return (a/b);
-	};
-
-	return Calculator;
+    return Calculator;
 });
