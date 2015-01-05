@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>harness</title>
+		<script src="lib/require/require-min.js"></script>
+		<!-- <script src="js/Calculator.js"></script>
+		<script src="js/ScientificCalculator.js"></script>
+		<script src="js/withExponents.js"></script>
+		<script src="js/delay.js"></script> -->
+	</head>
+	<body>
+		<script>
+			require(['js/Calculator', 'js/ScientificCalculator', 'js/withExponents', 'js/delay'], function(Calculator, ScientificCalculator, withExponents, delay) {
+				window.Calculator = Calculator;
+				window.ScientificCalculator = ScientificCalculator;
+				window.withExponents = withExponents;
+				window.delay = delay;
+
+
+				var calculator = new Calculator();
+				var scicalculator = new ScientificCalculator();
+				
+				console.log(calculator.add(2, 2));
+				console.log(scicalculator.add(2, 2));
+				
+				withExponents.call( calculator );
+				
+				console.log('sin: ' + calculator.sin( Math.PI / 2 ) );
+				
+				var willAdd = delay( 100, calculator, 'add', [ 1, 1 ] );
+				console.log(willAdd);
+				willAdd.then(function(data){
+					console.log(data);
+				});
+			});
+
+		</script>
+	</body>
+</html>

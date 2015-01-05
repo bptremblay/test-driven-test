@@ -1,4 +1,4 @@
-define(function() {
+define([], function() {
 	var withExponents = function() {
 		this.pow = function(base, exponent) {
 			return Math.pow(base, exponent);

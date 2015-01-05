@@ -3,7 +3,7 @@
 
 //NOTE: in the spec, delay() is global and not pulled in via require()
 // Assume there's some injection in the test and we use AMD.
-define(function() {
+define([], function() {
 	/**
 	 *
 	 * @param {Number} milliseconds
