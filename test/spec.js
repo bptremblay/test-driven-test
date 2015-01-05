@@ -3,10 +3,10 @@
 
 "use strict";
 
-var Calculator = require('../js/Calculator.js');
-var ScientificCalculator = require('../js/ScientificCalculator.js');
-var withExponents = require('../js/withExponents.js');
-var delay = require('../js/delay.js');
+//var Calculator = require('Calculator');
+//var ScientificCalculator = require('ScientificCalculator');
+//var withExponents = require('withExponents');
+//var delay = require('delay');
 
 describe("Calculator Tests", function() {
 	// Write a Calculator class that matches this specification
