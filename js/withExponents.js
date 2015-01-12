@@ -53,10 +53,9 @@ define(
                         // Step 2 : Then divide the exponents after
                         // simplified, for final
                         // result.
-                        if (index>0){
+                        if (index > 0) {
                             previousPowerOfPair = previousPowerOfPair / powerOfPair;
-                        }
-                        else{
+                        } else {
                             previousPowerOfPair = powerOfPair;
                         }
                     } else {
