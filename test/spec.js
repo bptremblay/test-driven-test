@@ -1,14 +1,9 @@
 /* jslint node: true */
-/* global describe, it, expect */
-
-"use strict";
-//var Calculator = require('Calculator');
-//var ScientificCalculator = require('ScientificCalculator');
-//var withExponents = require('withExponents');
-//var delay = require('delay');
+/* global describe, it, chai */
 define(
 	[ 'Calculator', 'ScientificCalculator', 'withExponents', 'delay' ],
 	function(Calculator, ScientificCalculator, withExponents, delay) {
+	    var expect = chai.expect;
 	    describe(
 		    "Calculator Tests",
 		    function() {
@@ -22,23 +17,26 @@ define(
 			    });
 
 			    it("adds 1 and 2", function() {
-				expect(calculator.add(1, 2)).toEqual(3);
+				expect(calculator.add(1, 2)).to.equal(3);
 			    });
 
 			    it("subtracts 2 from 9", function() {
-				expect(calculator.subtract(9, 2)).toEqual(7);
+				expect(calculator.subtract(9, 2)).to.equal(7);
 			    });
 
 			    it("multiplies 4 and 3", function() {
-				expect(calculator.multiply(4, 3)).toEqual(12);
+				expect(calculator.multiply(4, 3)).to.equal(12);
 			    });
 
 			    it("divides 10 by 2", function() {
-				expect(calculator.divide(10, 2)).toEqual(5);
+				expect(calculator.divide(10, 2)).to.equal(5);
 			    });
 
 			    it("does not divide by 0", function() {
-				expect(calculator.divide(5, 0)).toEqual(NaN);
+				// NaN !== NaN; so this will always fail.
+				// expect(calculator.divide(5, 0)).to.equal(NaN);
+				// expect(calculator.divide(5, 0)).to.equal(Infinity);
+				expect(isNaN(calculator.divide(5, 0))).to.be.true;
 			    });
 			});
 			// Write a ScientificCalculator class that matches this
@@ -62,28 +60,26 @@ define(
 							.instanceOf(ScientificCalculator);
 					    });
 
-				    it(
-					    "returns the sine of PI / 2",
+				    it("returns the sine of PI / 2",
 					    function() {
-						expect(
-							calculator
-								.sin(Math.PI / 2))
-							.toEqual(1);
+						expect(calculator
+							.sin(Math.PI / 2)).to
+							.equal(1);
 					    });
 
 				    it("returns the cosine of PI", function() {
-					expect(calculator.cos(Math.PI))
-						.toEqual(-1);
+					expect(calculator.cos(Math.PI)).to
+						.equal(-1);
 				    });
 
 				    it("returns the tangent of 0", function() {
-					expect(calculator.tan(0)).toEqual(0);
+					expect(calculator.tan(0)).to.equal(0);
 				    });
 
 				    it("returns the logarithm of 1",
 					    function() {
-						expect(calculator.log(1))
-							.toEqual(0);
+						expect(calculator.log(1)).to
+							.equal(0);
 					    });
 				});
 			// Write a withExponents functional mixin that matches
@@ -98,21 +94,18 @@ define(
 			    });
 
 			    it("returns 2^3", function() {
-				expect(calculator.pow(2, 3)).toEqual(8);
+				expect(calculator.pow(2, 3)).to.equal(8);
 			    });
 
 			    it("multiplies 2^3 and 2^4", function() {
-				expect(
-					calculator.multiplyExp([ 2, 3 ],
-						[ 2, 4 ])).toEqual(128);
+				expect(calculator.multiplyExp([ 2, 3 ],
+					[ 2, 4 ])).to.equal(128);
 			    });
 
 			    it("divides 2^3 by 2^5",
 				    function() {
-					expect(
-						calculator.divideExp([ 2, 3 ],
-							[ 2, 5 ]))
-						.toEqual(0.25);
+					expect(calculator.divideExp([ 2, 3 ], [
+						2, 5 ])).to.equal(0.25);
 				    });
 			});
 
